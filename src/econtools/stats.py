@@ -1,5 +1,5 @@
 def mean(values: list[float]) -> float:
-    """Mean of a list of numbers."""
+    """Return the mean of a list of numbers that was input."""
     total = 0
 
     for value in values:
@@ -9,12 +9,12 @@ def mean(values: list[float]) -> float:
 
 
 def demean(values: list[float], mean_value: float) -> list[float]:
-    """List with the mean subtracted from each value."""
+    """Return a list with the mean subtracted from each value of the list that was input."""
     return [value - mean_value for value in values]
 
 
 def variance(values: list[float]) -> float:
-    """Population variance of a list of numbers."""
+    """Return the population variance (calulated with mean and demean) of a list of numbers that was input."""
     mean_value = mean(values)
     deviations = demean(values, mean_value)
 
