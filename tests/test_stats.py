@@ -29,3 +29,6 @@ def test_variance():
 
 def test_variance_zero():
     assert variance([2, 2, 2]) == pytest.approx(0.0)
+
+def test_mean_again():
+    assert mean ([1, 2, 3, 4, 5, 6, 7]) == 4
